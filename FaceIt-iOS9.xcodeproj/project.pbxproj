@@ -8,20 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		45F76D891CDE2548004D3DD7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45F76D881CDE2548004D3DD7 /* AppDelegate.swift */; };
-		45F76D8B1CDE2548004D3DD7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45F76D8A1CDE2548004D3DD7 /* ViewController.swift */; };
+		45F76D8B1CDE2548004D3DD7 /* FaceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45F76D8A1CDE2548004D3DD7 /* FaceViewController.swift */; };
 		45F76D8E1CDE2549004D3DD7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45F76D8C1CDE2549004D3DD7 /* Main.storyboard */; };
 		45F76D901CDE2549004D3DD7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45F76D8F1CDE2549004D3DD7 /* Assets.xcassets */; };
 		45F76D931CDE2549004D3DD7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45F76D911CDE2549004D3DD7 /* LaunchScreen.storyboard */; };
+		45F76D9C1CDE2642004D3DD7 /* FaceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45F76D9B1CDE2642004D3DD7 /* FaceView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		45F76D851CDE2548004D3DD7 /* FaceIt-iOS9.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "FaceIt-iOS9.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		45F76D881CDE2548004D3DD7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		45F76D8A1CDE2548004D3DD7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		45F76D8A1CDE2548004D3DD7 /* FaceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceViewController.swift; sourceTree = "<group>"; };
 		45F76D8D1CDE2549004D3DD7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		45F76D8F1CDE2549004D3DD7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		45F76D921CDE2549004D3DD7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		45F76D941CDE2549004D3DD7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		45F76D9B1CDE2642004D3DD7 /* FaceView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FaceView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +56,23 @@
 		45F76D871CDE2548004D3DD7 /* FaceIt-iOS9 */ = {
 			isa = PBXGroup;
 			children = (
-				45F76D881CDE2548004D3DD7 /* AppDelegate.swift */,
-				45F76D8A1CDE2548004D3DD7 /* ViewController.swift */,
 				45F76D8C1CDE2549004D3DD7 /* Main.storyboard */,
+				45F76D8A1CDE2548004D3DD7 /* FaceViewController.swift */,
+				45F76D9B1CDE2642004D3DD7 /* FaceView.swift */,
+				45F76D9A1CDE255D004D3DD7 /* Supporting Files */,
+			);
+			path = "FaceIt-iOS9";
+			sourceTree = "<group>";
+		};
+		45F76D9A1CDE255D004D3DD7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				45F76D881CDE2548004D3DD7 /* AppDelegate.swift */,
 				45F76D8F1CDE2549004D3DD7 /* Assets.xcassets */,
 				45F76D911CDE2549004D3DD7 /* LaunchScreen.storyboard */,
 				45F76D941CDE2549004D3DD7 /* Info.plist */,
 			);
-			path = "FaceIt-iOS9";
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,8 +146,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				45F76D8B1CDE2548004D3DD7 /* ViewController.swift in Sources */,
+				45F76D8B1CDE2548004D3DD7 /* FaceViewController.swift in Sources */,
 				45F76D891CDE2548004D3DD7 /* AppDelegate.swift in Sources */,
+				45F76D9C1CDE2642004D3DD7 /* FaceView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
