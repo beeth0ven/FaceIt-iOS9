@@ -10,7 +10,7 @@ import UIKit
 
 class FaceViewController: UIViewController {
     
-    private var expression = FacialExpression(eyes: .Open, eyeBrowns: .Normal, mouth: .Smile) { didSet { updateUI() } }
+    var expression = FacialExpression(eyes: .Open, eyeBrowns: .Normal, mouth: .Smile) { didSet { updateUI() } }
 
     @IBOutlet weak var faceView: FaceView! { didSet { updateUI() } }
     
@@ -43,6 +43,7 @@ class FaceViewController: UIViewController {
     ]
 
     private func updateUI() {
+        guard faceView != nil else { return }
         switch expression.eyes {
         case .Open: faceView.eyesOpen = true
         case .Close: faceView.eyesOpen = false
